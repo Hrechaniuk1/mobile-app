@@ -1,0 +1,120 @@
+body {
+    font-family: Inter, sans-serif;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.container {
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.page-head {
+    background-image: linear-gradient(90deg, rgba(0, 197, 235, 0.30) -1.97%, rgba(181, 68, 254, 0.30) 89.43%);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 26px;
+}
+
+.head-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    color: #FFF;
+        font-size: 28px;
+        font-weight: 400;
+        line-height: normal;
+        padding-top: 19px;
+        padding-bottom: 19px;
+}
+
+.nav-list {
+    display: flex;
+    gap: 40px;
+    color: #FFF;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: normal;
+        padding-top: 19px;
+        padding-bottom: 19px;
+        text-transform: uppercase;
+
+}
+
+/* ====================section 1===================== */
+.section-1 {
+    background-color: #06071B;
+    padding-top: 243px;
+    padding-bottom: 146px;
+}
+
+.main-title {
+    color: #FFF;
+margin-bottom: 18px;
+        font-size: 40px;
+
+        font-weight: 700;
+        line-height: normal;
+}
+
+.second-title {
+    color: #FFF;
+margin-bottom: 28px;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: normal;
+}
+
+.download-list {
+    color: #FFF;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: normal;
+        margin-bottom: 62px;
+}
+
+.download-list li:not(:last-child) {
+margin-bottom: 14px;
+}
+
+.download-btn {
+    width: 200px;
+        height: 42px;
+        border-radius: 5px;
+            background: linear-gradient(90deg, #00C5EB -1.97%, #B544FE 89.43%);
+color: #FFF;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-1-container {
+    position: relative;
+}
+
+.phone-img {
+    position: absolute;
+    top: 124px;
+    right: 109px;
+    z-index: 1;
+}
+
+.screen-img {
+    position: absolute;
+    top: 124px;
+    right: 92px;
+}
