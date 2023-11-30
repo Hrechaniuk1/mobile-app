@@ -202,12 +202,10 @@ color: #FFF;
     background-image: url(../images/section-2/section-2-bg-right.svg), url(../images/section-2/section-2-bg-left.svg);
     background-repeat: no-repeat;
     background-position: top -170px right 10px, bottom -250px left 0;
+    padding-bottom: 105px;
+    padding-top: 40px;
 }
 
-.section-2-container {
-    padding-top: 40px;
-    padding-bottom: 105px;
-}
 
 .section-2-title {
     color: #000;
@@ -374,7 +372,7 @@ text-transform: uppercase;
 }
 
 .section-4-team-item {
-    max-width: 288px;
+    flex-basis: calc((100% - 96px) / 4);
     padding: 12px;
     text-align: center;
     background-color: #06071B;
@@ -466,13 +464,124 @@ overflow: hidden;
         font-weight: 500;
         line-height: 1.5;
         margin-bottom: 64px;
+        max-width: 886px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
 }
-.section-4-feedback-2, .section-4-feedback-3, .section-4-feedback-4, .section-4-feedback-5, .section-4-feedback-6, .section-4-feedback-7 {
+.section-4-feedback, .section-4-feedback-2, .section-4-feedback-3, .section-4-feedback-4, .section-4-feedback-5, .section-4-feedback-6, .section-4-feedback-7 {
     text-align: center;
-    display: none;
+    /* display: none; */
+    opacity: 0;
+    position: absolute;
+    top: 40px;
+    /*  */
+    width: 100%;
 }
 
-.section-4-feedback {
-    text-align: center;
+
+/*  */
+
+.feedback-container-main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
+input[type="radio"] {
+
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            margin: -1px;
+            border: 0;
+            padding: 0;
+    
+            white-space: nowrap;
+            clip-path: inset(100%);
+            clip: rect(0 0 0 0);
+            overflow: hidden;
+        
+}
+
+label {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: gray;
+    margin-left: 5px;
+    margin-bottom: 20px;
+    transition: background-color 500ms ease-in-out;
+}
+
+/* radio */
+
+.radio-1:checked ~ .fake-r-1 {
+    background-color: #000;
+}
+.radio-1:checked ~ .section-4-feedback {
+    position: static;
+    opacity: 1;
+    transition: 500ms ease-in-out;
+}
+
+.radio-2:checked~.fake-r-2 {
+    background-color: #000;
+}
+
+.radio-2:checked~.section-4-feedback-2 {
+    position: static;
+    opacity: 1;
+    transition: 500ms ease-in-out;
+}
+
+.radio-3:checked~.fake-r-3 {
+    background-color: #000;
+}
+
+.radio-3:checked~.section-4-feedback-3 {
+    position: static;
+        opacity: 1;
+        transition: 500ms ease-in-out;
+}
+
+.radio-4:checked~.fake-r-4 {
+    background-color: #000;
+}
+
+.radio-4:checked~.section-4-feedback-4 {
+position: static;
+    opacity: 1;
+    transition: 500ms ease-in-out;
+
+}
+
+.radio-5:checked~.fake-r-5 {
+    background-color: #000;
+}
+
+.radio-5:checked~.section-4-feedback-5 {
+position: static;
+    opacity: 1;
+    transition: 500ms ease-in-out;
+}
+
+.radio-6:checked~.fake-r-6 {
+    background-color: #000;
+}
+
+.radio-6:checked~.section-4-feedback-6 {
+position: static;
+    opacity: 1;
+    transition: 500ms ease-in-out;
+}
+
+.radio-7:checked~.fake-r-7 {
+    background-color: #000;
+}
+
+.radio-7:checked~.section-4-feedback-7 {
+position: static;
+    opacity: 1;
+    transition: 500ms ease-in-out;
+}
