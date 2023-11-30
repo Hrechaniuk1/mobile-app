@@ -12,17 +12,23 @@ ul {
     list-style-type: none;
 }
 
+h1, h2, h3, h4 {
+    margin: 0;
+}
+
 .container {
     padding-left: 16px;
     padding-right: 16px;
+    max-width: 1280px;
 }
 
 .page-head {
     background-image: linear-gradient(90deg, rgba(0, 197, 235, 0.30) -1.97%, rgba(181, 68, 254, 0.30) 89.43%);
-    position: absolute;
+    position: fixed;
     left: 0;
     right: 0;
     top: 26px;
+    z-index: 999;
 }
 
 .head-container {
@@ -55,8 +61,17 @@ ul {
 /* ====================section 1===================== */
 .section-1 {
     background-color: #06071B;
-    padding-top: 243px;
-    padding-bottom: 146px;
+    background-clip: content-box;
+    padding-bottom: 62px;
+}
+
+.section-1-container {
+    position: relative;
+        padding-top: 243px;
+            padding-bottom: 146px;
+        background-image: url(../images/section-1/text-bg.svg), url(../images/section-1/phone-bg.svg);
+            background-repeat: no-repeat;
+            background-position: top 240px left 40px, top 140px right 40px;
 }
 
 .main-title {
@@ -66,6 +81,7 @@ margin-bottom: 18px;
 
         font-weight: 700;
         line-height: normal;
+        z-index: 1;
 }
 
 .second-title {
@@ -74,6 +90,7 @@ margin-bottom: 28px;
         font-size: 20px;
         font-weight: 700;
         line-height: normal;
+        z-index: 1;
 }
 
 .download-list {
@@ -82,6 +99,7 @@ margin-bottom: 28px;
         font-weight: 400;
         line-height: normal;
         margin-bottom: 62px;
+        z-index: 1;
 }
 
 .download-list li:not(:last-child) {
@@ -92,7 +110,7 @@ margin-bottom: 14px;
     width: 200px;
         height: 42px;
         border-radius: 5px;
-            background: linear-gradient(90deg, #00C5EB -1.97%, #B544FE 89.43%);
+            background-image: linear-gradient(90deg, #00C5EB -1.97%, #B544FE 89.43%);
 color: #FFF;
     font-size: 16px;
     font-weight: 700;
@@ -100,21 +118,115 @@ color: #FFF;
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 100;
 }
 
-.section-1-container {
-    position: relative;
-}
 
 .phone-img {
     position: absolute;
-    top: 124px;
-    right: 109px;
+    top: 210px;
+    right: 119px;
     z-index: 1;
+    width: 450px;
+    
 }
 
 .screen-img {
     position: absolute;
-    top: 124px;
+    top: 210px;
     right: 92px;
+    width: 470px;
+}
+
+.shadow-section-1 {
+    position: absolute;
+    bottom: -62px;
+    right: 160px;
+}
+
+.lt1 {
+    position: absolute;
+    top: 240px;
+    right: 430px;
+    width: 77px;
+}
+
+.lt2 {
+    position: absolute;
+    top: 260px;
+    right: 520px;
+    width: 95px;
+}
+
+.lt3 {
+    position: absolute;
+    top: 320px;
+    right: 520px;
+    width: 150px;
+}
+
+.lt4 {
+    position: absolute;
+    top: 310px;
+    right: 650px;
+    width: 130px;
+}
+
+.lt5 {
+    position: absolute;
+    top: 410px;
+    right: 700px;
+    width: 120px;
+}
+
+.lt6 {
+    position: absolute;
+    top: 500px;
+    right: 800px;
+    width: 130px;
+}
+
+.lt7 {
+    position: absolute;
+    right: 790px;
+    top: 620px;
+    width: 80px;
+}
+
+/* ================section 2================== */
+.section-2 {
+    
+}
+
+.section-2-container {
+    padding-top: 40px;
+    padding-bottom: 105px;
+}
+
+.section-2-title {
+    color: #000;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 179px;
+text-transform: uppercase;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: normal;
+}
+
+.section-2-description {
+    max-width: 855px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    color: #000;
+        text-align: center;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1.5;
+}
+
+.section-2-list {
+    display: flex;
+
 }
