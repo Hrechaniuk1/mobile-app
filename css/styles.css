@@ -26,6 +26,7 @@ h1, h2, h3, h4 {
 }
 
 .page-head {
+    background-color: #06071B;
     background-image: linear-gradient(90deg, rgba(0, 197, 235, 0.30) -1.97%, rgba(181, 68, 254, 0.30) 89.43%);
     position: fixed;
     left: 0;
@@ -329,6 +330,12 @@ text-transform: uppercase;
 
 /* =====================section-4======================== */
 
+.section-4 {
+        background-image: url(../images/section-4/section-4-bg-right.svg), url(../images/section-4/section-4-bg-mdl.svg), url(../images/section-4/section-4-bg-left.svg);
+            background-repeat: no-repeat;
+            background-position: top 30px right 0px, top 0 left -30px, bottom -40px left -20px;
+}
+
 .section-4-container {
     padding-top: 80px;
     padding-bottom: 80px;
@@ -396,10 +403,18 @@ text-transform: uppercase;
         font-weight: 500;
         line-height: 1.71;
 }
-
-.section-4-feedback {
-    text-align: center;
+/* feedback box */
+.feedback-container-main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
+
+.input-hidden {
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+
 
 .feedback-title {
     max-width: 352px;
@@ -452,35 +467,12 @@ overflow: hidden;
         line-height: 1.5;
         margin-bottom: 64px;
 }
-
-.section-4-feedback-2 {
+.section-4-feedback-2, .section-4-feedback-3, .section-4-feedback-4, .section-4-feedback-5, .section-4-feedback-6, .section-4-feedback-7 {
     text-align: center;
     display: none;
 }
 
-.form-box {
-    position: relative;
-    max-width: 130px;
-    margin-left: auto;
-    margin-right: auto;
+.section-4-feedback {
+    text-align: center;
 }
 
-
-/*  */
-.fake-box {
-    display: flex;
-    gap: 10px;
-        position: absolute;
-            top: 0;
-            left: 0;
-    max-width: 130px;
-}
-
-.radio-fake {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: #939EAC;
-}
-
-/*  */
