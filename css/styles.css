@@ -328,12 +328,13 @@ text-transform: uppercase;
 
 /* =====================section-4======================== */
 
+
 .section-4 {
-        background-image: url(../images/section-4/section-4-bg-right.svg), url(../images/section-4/section-4-bg-mdl.svg), url(../images/section-4/section-4-bg-left.svg);
+    background-image: url(../images/section-4/section-4-bg-right.svg), url(../images/section-4/section-4-bg-mdl.svg), url(../images/section-4/section-4-bg-left.svg);
             background-repeat: no-repeat;
             background-position: top 30px right 0px, top 0 left -30px, bottom -40px left -20px;
 position: relative;
-        }
+}
 
 .section-4-container {
     padding-top: 80px;
@@ -638,7 +639,9 @@ pointer-events: none;
     background-color: green;
 }
 
+
 .iphone-checkbox::after, .iphone-checkbox::before, .iphone-checkbox {
     transition: all 1s;
 }
+
 
