@@ -41,7 +41,11 @@
             <li>Robust analytics and reporting for data-driven insights</li>
             <li>Offline capabilities for uninterrupted use</li>
           </ul>
-          <button class="download-btn" type="button">Download</button>
+          <div class="button-container">
+            <button class="download-btn" type="button" data-modal-open>
+              Download
+            </button>
+          </div>
           <img class="lt1" src="./images/section-1/1st.png" alt="" />
           <img class="lt2" src="./images/section-1/2nd.png" alt="" />
           <img class="lt3" src="./images/section-1/3rd.png" alt="" />
@@ -400,9 +404,9 @@
       </div>
     </footer>
     <!-- ================================== -->
-    <div class="modal-bg is-open">
+    <div class="modal-bg is-hidden" data-modal>
       <div class="modal-f">
-        <button class="close-dwl-btn">
+        <button class="close-dwl-btn" data-modal-close>
           <svg class="modal-close-icon" width="28" height="28">
             <use href="./images/modal/modal-sprite.svg#icon-close-line"></use>
           </svg>
@@ -521,5 +525,6 @@
         <a class="dwld-btn-final" href="" download="plan">Download</a>
       </div>
     </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
