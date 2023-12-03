@@ -853,23 +853,30 @@ pointer-events: none;
 
 /* ======================modal===================== */
 .modal-bg {
-    /* position: fixed; */
+    position: fixed;
+    height: 100%;
+    overflow: auto;
     top: 0;
     left: 0;
     right: 0;
     background-image: linear-gradient(rgba(6, 7, 27, 0.7), rgba(6, 7, 27, 0.7));
     z-index: 99999999;
+    display: none;
 
+}
+
+.is-open {
+    display: block;
 }
 
 .modal-f {
     width: 568px;
     /* height: 970px; */
     background-color: #06071B;
-    /* position: absolute;
-    top: 50%;
+    position: absolute;
+    top: 90%;
     left: 50%;
-    transform: translate(-50%, -50%); */
+    transform: translate(-50%, -50%);
     padding: 32px 40px;
 }
 
@@ -969,8 +976,54 @@ margin-right: auto;
     border-radius: 6px;
     border: 2px solid var(--LINEAR, #00C5EB);
     width: 224px;
-    color: white;
+
 }
+
+.app-about li, .os-about li {
+    padding-left: 0px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.app-about li:not(:last-child),
+.os-about li:not(:last-child) {
+margin-bottom: 20px;
+}
+
+
+.app-about li > p:not(:last-child),
+.os-about li > p:not(:last-child) {
+    margin-bottom: 4px;
+}
+
+
+.app-about li > p,
+.os-about li > p {
+    display: inline-block;
+        color: white;
+        font-size: 12px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+
+}
+
+.app-about li>p:last-child,
+.os-about li>p:last-child {
+    color: #1AB9FD;
+
+}
+
+
+.app-name-img, .app-lisence-img, .app-author-img, .app-data-img, .app-system-img, .app-lang-img, .app-size-img, .app-download-img  {
+    width: 38px;
+    position: absolute;
+    top: 15px;
+    left: -45px;
+
+}
+
 
 .dwld-btn-final {
     border-radius: 5px;
