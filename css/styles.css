@@ -152,8 +152,8 @@ stroke: white;
 .section-2 {
     background-image: url(../images/section-2/section-2-bg-top.png), url(../images/section-2/section-2-bg-bottom.png);
     background-repeat: no-repeat;
-    background-position: top -190px right 0px, bottom -180px right -130px;
-    background-size: 400px, 500px;
+    background-position: top -190px right 0px, bottom -180px right 0px;
+    background-size: 500px, 500px;
     padding-bottom: 40px;
     padding-top: 40px;
     position: relative;
@@ -716,25 +716,24 @@ label {
     right: 0;
     background-image: linear-gradient(rgba(6, 7, 27, 0.7), rgba(6, 7, 27, 0.7));
     z-index: 99999999;
-visibility: visible;
-    opacity: 1;
-    pointer-events: auto;
+    visibility: hidden;
+        opacity: 0;
+        pointer-events: none;
     
 
 }
 
 .is-hidden {
-
-    visibility: hidden;
-        opacity: 0;
-        pointer-events: none;
+visibility: visible;
+    opacity: 1;
+    pointer-events: auto;
 }
 
 .modal-f {
     width: 100%;
     background-color: #06071B;
     position: absolute;
-    top: 132%;
+    top: 850px;
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 32px 40px;
@@ -778,7 +777,7 @@ visibility: visible;
 
 .download-free,
 .download-pay {
-    min-width: 232px;
+    width: 232px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -1009,18 +1008,18 @@ height: 100%;
     background-image: url(../images/mob-menu-bg.png);
     background-repeat: no-repeat;
     background-size: 450px;
-    background-position: bottom 0px right 0px;
+    background-position: right 0px bottom 0px;
     z-index: 999999;
     padding-top: 34px;
     padding-left: 20px;
     padding-right: 20px;
-visibility: visible;
-    opacity: 1;
+        opacity: 0;
+            visibility: hidden;
 }
 
 .is-hidden-mob {
-        opacity: 0;
-            visibility: hidden;
+visibility: visible;
+    opacity: 1;
 }
 
 .mob-logo {
