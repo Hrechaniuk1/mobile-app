@@ -375,7 +375,7 @@ position: relative;
     padding-bottom: 80px;
 }
 
-.section-4-title {
+/* .section-4-title {
 text-transform: uppercase;
         font-size: 24px;
         font-weight: 700;
@@ -396,14 +396,14 @@ text-transform: uppercase;
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 70px;
-}
+} */
 
-.section-4-team-list {
+/* .section-4-team-list {
     display: flex;
     gap: 32px;
     justify-content: center;
     margin-bottom: 80px;
-}
+} */
 
 .section-4-team-item {
     flex-basis: calc((100% - 96px) / 4);
@@ -414,7 +414,7 @@ text-transform: uppercase;
     background-image: linear-gradient(313deg, rgba(0, 197, 235, 0.50) -0.2%, rgba(181, 68, 254, 0.50) 112.66%);
 }
 
-.section-4-img-container {
+/* .section-4-img-container {
     border-radius: 10px;
     margin-bottom: 20px;
     overflow: hidden;
@@ -434,13 +434,13 @@ text-transform: uppercase;
         font-size: 14px;
         font-weight: 500;
         line-height: 1.71;
-}
+} */
 /* feedback box */
-.feedback-container-main {
+/* .feedback-container-main {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-}
+} */
 
 .input-hidden {
     margin-left: 10px;
@@ -448,7 +448,7 @@ text-transform: uppercase;
 }
 
 
-.feedback-title {
+/* .feedback-title {
     max-width: 352px;
 text-transform: uppercase;
         font-size: 24px;
@@ -457,9 +457,9 @@ text-transform: uppercase;
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 40px;
-}
+} */
 
-.feedback-img {
+/* .feedback-img {
     max-width: 181px;
     max-height: 181px;
 overflow: hidden;
@@ -505,12 +505,12 @@ overflow: hidden;
     position: absolute;
     pointer-events: none;
     width: 100%;
-}
+} */
 
 
 /*  */
 
-.feedback-container-main {
+/* .feedback-container-main {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -540,9 +540,9 @@ label {
     margin-left: 5px;
     margin-bottom: 20px;
     transition: background-color 500ms ease-in-out;
-}
+} */
 
-/* radio */
+/* radio
 
 .radio-1:checked ~ .fake-r-1 {
     background-color: #000;
@@ -612,7 +612,7 @@ position: static;
 position: static;
     opacity: 1;
     transition: 500ms ease-in-out;
-}
+} */
 
 /*  */
 .lala {
@@ -684,7 +684,7 @@ pointer-events: none;
     padding-top: 80px;
     padding-bottom: 139px;
 }
-
+/* 
 .footer-title {
     color: #FFF;
         font-size: 24px;
@@ -696,7 +696,7 @@ pointer-events: none;
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 80px;
-}
+} */
 
 .footer-flex-container {
     display: flex;
@@ -708,14 +708,14 @@ pointer-events: none;
     max-width: 608px;
 }
 
-.footer-form {
+/* .footer-form {
     display: flex;
     flex-wrap: wrap;
     max-width: 608px;
     row-gap: 20px;
     column-gap: 32px;
     margin-bottom: 20px;
-}
+} */
 
 .input-footer-name, .input-footer-mail {
     min-width: 288px;
@@ -779,11 +779,11 @@ pointer-events: none;
 
 }
 
-.footer-content {
+/* .footer-content {
     max-width: 500px;
-}
+} */
 
-.footer-second-title {
+/* .footer-second-title {
     color: #FFF;
         font-size: 24px;
         font-weight: 500;
@@ -794,7 +794,7 @@ pointer-events: none;
     color: #FFF;
         font-weight: 500;
         line-height: normal;
-}
+} */
 
 .footer-social-list {
     display: flex;
@@ -953,6 +953,8 @@ margin-right: auto;
     padding: 16px 40px;
 }
 
+
+
 .modal-description {
     color: #FFF;
         font-size: 16px;
@@ -964,6 +966,7 @@ margin-right: auto;
 
 .recomendations-modal {
     display: flex;
+    flex-wrap: wrap;
     gap: 0;
 }
 
