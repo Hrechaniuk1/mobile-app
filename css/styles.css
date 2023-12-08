@@ -716,16 +716,17 @@ label {
     right: 0;
     background-image: linear-gradient(rgba(6, 7, 27, 0.7), rgba(6, 7, 27, 0.7));
     z-index: 99999999;
-    visibility: visible;
-    opacity: 1;
-    pointer-events: auto;
+    visibility: hidden;
+        opacity: 0;
+        pointer-events: none;
+    
 
 }
 
 .is-hidden {
-    visibility: hidden;
-    opacity: 0;
-    pointer-events: none;
+visibility: visible;
+    opacity: 1;
+    pointer-events: auto;
 }
 
 .modal-f {
@@ -1012,13 +1013,13 @@ height: 100%;
     padding-top: 34px;
     padding-left: 20px;
     padding-right: 20px;
-    visibility: visible;
-    opacity: 1;
+opacity: 0;
+    visibility: hidden;
 }
 
 .is-hidden-mob {
-    opacity: 0;
-    visibility: hidden;
+    visibility: visible;
+        opacity: 1;
 }
 
 .mob-logo {
