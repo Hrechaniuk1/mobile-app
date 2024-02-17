@@ -29,15 +29,3 @@
 })();
 
 
-  const form = document.querySelector(".foot-form")
-  form.addEventListener("submit", getInfo)
-  function getInfo(event) {
-    event.preventDefault()
-    let formInfo = {
-      [form.elements.userName.name]: form.elements.userName.value,
-      [form.elements.userMail.name]: form.elements.userMail.value,
-      [form.elements.userMassage.name]: form.elements.userMassage.value,
-    }
-       form.reset()
-    console.log(formInfo)
-}
