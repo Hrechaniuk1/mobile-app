@@ -16,13 +16,15 @@
     />
     <title>Document</title>
     <script src="./js/form.js" type="module" defer></script>
+    <script src="./js/modal.js" type="module" defer></script>
+    <script src="./js/mob-menu.js" type="module" defer></script>
   </head>
   <body>
     <header class="page-head">
       <div class="head-container container">
         <nav class="main-nav">
           <a class="logo" href=""><span>Mobileapp</span></a>
-          <button class="mob-menu-btn-open" type="button" data-mob-menu-open>
+          <button class="mob-menu-btn-open" type="button">
             <svg class="mob-menu-open-icon" width="24" height="14">
               <use href="./images/symbol-defs.svg#icon-mob-menu"></use>
             </svg>
@@ -48,9 +50,7 @@
             <li>Offline capabilities for uninterrupted use</li>
           </ul>
           <div class="button-container">
-            <button class="download-btn" type="button" data-modal-open>
-              Download
-            </button>
+            <button class="download-btn" type="button">Download</button>
           </div>
           <img
             class="phone-img"
@@ -191,14 +191,6 @@
         </div>
       </section>
       <section class="section-4">
-        <!-- <input class="lala" id="lala" type="checkbox" />
-        <label
-          class="iphone-checkbox"
-          for="lala"
-          data-onlabel="on"
-          data-offlabel="off"
-        >
-        </label> -->
         <div class="section-4-container container">
           <h2 class="section-4-title">OUR TEAM</h2>
           <p class="section-4-description">
@@ -512,9 +504,9 @@
       </div>
     </footer>
     <!-- ================================== -->
-    <div class="modal-bg" data-modal>
+    <div class="modal-bg">
       <div class="modal-f">
-        <button class="close-dwl-btn" data-modal-close>
+        <button class="close-dwl-btn">
           <svg class="modal-close-icon" width="24" height="24">
             <use href="./images/symbol-defs.svg#icon-close-line"></use>
           </svg>
@@ -595,7 +587,7 @@
         <a class="dwld-btn-final" href="" download="plan">Download</a>
       </div>
     </div>
-    <div class="mob-menu" data-mob-menu>
+    <div class="mob-menu">
       <a class="logo mob-logo" href=""><span>Mobileapp</span></a>
       <button class="close-mob-menu-btn" data-mob-menu-close>
         <svg class="mob-menu-close-icon" width="32" height="32">
@@ -610,7 +602,5 @@
         <li><a href="">Contacts</a></li>
       </ul>
     </div>
-
-    <script src="./js/modal.js"></script>
   </body>
 </html>

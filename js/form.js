@@ -9,9 +9,9 @@ form.addEventListener("input", doForInput)
 
 function doForInput(evt) {
     const infoForLocal = {
-    name: infoFromLocal.name || "",
-    email: infoFromLocal.email || "",
-    message: infoFromLocal.message || "",
+        name: infoFromLocal?.name || "",
+    email: infoFromLocal?.email || "",
+    message: infoFromLocal?.message || "",
 }
     if (evt.target === form.elements.userName) {
         infoForLocal.name = evt.target.value.trim()
@@ -23,6 +23,7 @@ function doForInput(evt) {
         infoForLocal.message = evt.target.value.trim()
         localStorage.setItem("form-info", JSON.stringify(infoForLocal))
     }
+    console.log(localStorage.getItem("form-info"))
 }
 
 console.log(localStorage.getItem("form-info"))
@@ -31,7 +32,7 @@ form.addEventListener("submit", doForSubmit)
 
 function doForSubmit(evt) {
     evt.preventDefault()
-    console.log(localStorage.getItem("form-info"))
+    localStorage.removeItem("form-info")
     form.reset()
 }
 

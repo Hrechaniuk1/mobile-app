@@ -111,6 +111,7 @@ img {
     border: transparent;
     margin-left: auto;
     margin-right: auto;
+    cursor: pointer;
 }
 
 /* ========================section 1================= *
@@ -519,6 +520,7 @@ background-repeat: no-repeat;
     line-height: normal;
     text-transform: uppercase;
     border: transparent;
+    cursor: pointer;
 }
 
 .footer-content {
@@ -629,6 +631,7 @@ visibility: visible;
     position: absolute;
     top: 20px;
     right: 20px;
+    cursor: pointer;
 }
 
 .modal-close-icon {
